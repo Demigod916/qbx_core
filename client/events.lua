@@ -2,7 +2,6 @@
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
     ShutdownLoadingScreenNui()
     QBX.IsLoggedIn = true
-
     if GlobalState.PVPEnabled then
         SetCanAttackFriendly(cache.ped, true, false)
         NetworkSetFriendlyFireOption(true)
